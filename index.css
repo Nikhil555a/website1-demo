@@ -1,0 +1,170 @@
+*{
+    margin:0%;
+    padding:0%;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(223,222,222);
+}
+container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top:0%;
+    width:100%;
+    height:70px;
+    background-color: rgb(3,126,202);
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 21px;
+    color:white;
+    margin-inline: 20px;
+}
+a:hover{
+    text-decoration: underline;
+    color:white;
+}
+.logo{
+    font-size: 21px;
+    font-weight: 700;
+}
+.line{
+    font-size: 22px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+.main img{
+    width:300px;
+    height:500px
+}
+.maintext{
+    margin-top: 55px;
+}
+.main h1{
+    font-size: 66px;
+    
+}
+.main p{
+    margin-top:22px;
+}
+.main button{
+    width:140px;
+    height:40px;
+    background-color: blue;
+    color:white;
+    margin-top:22px;
+    border:none;
+    outline:0;
+}
+.special{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin-top:77px;
+}
+.special .card{
+    width:300px;
+    height:130px;
+    padding:22px;
+    background-color: rgb(0,128,255);
+    color:white;
+    margin-inline:22px;
+    border-radius:6px;
+    text-align: center;
+    cursor:pointer;
+    overflow: hidden;
+    margin-top:22px;
+}
+.card img{
+    height:100px;
+    object-fit: cover;
+    transition: all ease 1s;
+}
+.head h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:80px;
+}
+.special .card:hover img{
+    scale:1.2;
+}
+.doctor{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    
+}
+.doccard{
+    width:300px;
+    margin-inline:22px;
+    margin-top:22px;
+    
+    
+}
+
+.doccard img{
+    width:100%;
+    height:300px;
+    
+    
+}
+.doccard p{
+    background-color: black;
+    padding:22px;
+    color:white;
+    text-align: center;
+}
+.review{
+    display:flex;
+    justify-content: center;
+    margin-top: 70px;
+    height:200px;
+    width:230px;
+    background-color: rgb(96, 163, 213);
+    
+}
+.reviewcard{
+   
+    display:flex;
+    justify-content: center;
+    
+}
+.reviewcard img{
+    padding:22px;
+    width:230px;
+    height:200px;
+}
+@media screen and (max-width:960px){
+    .main{
+        display:block;
+        text-align: center;
+    }
+    ul{
+        display:none;
+    }
+}
+@media screen and (max-width:500px){
+    .maintext h1{
+        font-size: 30px;
+    }
+}
